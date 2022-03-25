@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('order_id');
             $table->integer('item_id');
             $table->integer('quantity');
-            $table->float('paid_quantity');
+            $table->decimal('paid_quantity');
             $table->softDeletes();
             $table->timestamps();
         });

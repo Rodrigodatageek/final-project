@@ -15,9 +15,8 @@ return new class extends Migration
     {
         Schema::create('tables', function (Blueprint $table) {
             $table->id('id');
-            $table->string('name');
-            $table->string('details');
-            $table->string('status');
+            $table->string('details')->nullable();
+            $table->string('status')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
